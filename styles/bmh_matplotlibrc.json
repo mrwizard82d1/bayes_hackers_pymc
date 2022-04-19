@@ -3,7 +3,7 @@
   "axes.edgecolor": "#bcbcbc",
   "patch.linewidth": 0.5,
   "legend.fancybox": true,
-  "axes.prop_cycle": {'color', [
+  "axes.prop_cycle": {"color": [
             "#348ABD",
             "#A60628",
             "#7A68A6",
@@ -17,6 +17,5 @@
   "axes.grid": true,
   "patch.edgecolor": "#eeeeee",
   "axes.titlesize": "x-large",
-  "svg.fonttype": "path",
-  "examples.directory": ""
+  "svg.fonttype": "path"
 }
