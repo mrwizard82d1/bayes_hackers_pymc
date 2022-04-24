@@ -3,26 +3,35 @@ channels:
   - conda-forge
   - defaults
 dependencies:
+  # PyMC3 (See https://github.com/pymc-devs/pymc/wiki/Installation-Guide-(Windows)#pymc-installation-on-windows)
+  - libpython
   - mkl-service
   - numba 
   - python-graphviz 
   - scipy
-  - libpython
   - arviz
-  - matplotlib
+  # The BLAS package is optional. Unable to make it work.
+  # - blas
+  # Other data science packages
   - numpy
+  - matplotlib
   - pandas
   - seaborn
-  - jupyter
+  # Next generation Jupyter notebooks
   - jupyterlab
-  - pip
+  # Functional tools - because I find them useful
   - toolz
+  # Needed to install pip packages **after** conda packages
+  - pip
   - pip:
     - pymc3
+    # Other interesting libraries from "Rethinking Statistics" 2nd # edition
     - causalgraphicalmodels
     - daft
-    - jupyterlab-vim
     - networkx
     - graphviz
+    # Used to print current execution environment for Jupyter notebooks
     - watermark
+    # Editing Jupyter notebook cells using Vim keystrokes
+    - jupyterlab-vim
 prefix: C:\Users\larry.jones\Miniconda3
